@@ -1,2 +1,6 @@
 # HA-Data-Pipeline-Project-1
-Data Pipeline built for: getting data from Azure blob strorage 
+<br/>
+
+Data Pipeline built for: 
+  - Getting log data from Azure blob strorage to GCP cloud storage.
+  -  Downloading log data from GCP and restoring log files to SQL Server
