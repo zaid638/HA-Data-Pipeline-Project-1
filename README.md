@@ -38,11 +38,11 @@ The pipeline consists of the following major components:
 
 ## ⚙️ Key Features<br/><br/>
 
-✅ Cross-cloud data movement (Azure → GCP)
-✅ Automated SQL Server database restoration
-✅ Centralized logging for observability
-✅ Email-based alerting for failures
-✅ Modular and scalable architecture
+✅ Cross-cloud data movement (Azure → GCP)<br/>
+✅ Automated SQL Server database restoration<br/>
+✅ Centralized logging for observability<br/>
+✅ Email-based alerting for failures<br/>
+✅ Modular and scalable architecture<br/>
 ✅ Production-ready pipeline design<br/><br/>
 
 ---
