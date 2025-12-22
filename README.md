@@ -1,4 +1,4 @@
-# HA-Data-Pipeline-Project-1<br/>
+# HA-Data-Pipeline-Project-1<br/><br/>
 
 ## 📌 Project Overview<br/>
 
@@ -6,10 +6,11 @@ This project implements an **automated cross-cloud data pipeline to restore SQL 
 
 The solution is designed with **fault tolerance**, **observability**, and **automation** in mind, making it suitable for enterprise-scale database restoration and migration use cases.<br/><br/>
 
+---
 
-## 🏗️ Architecture Overview<br/>
+## 🏗️ Architecture Overview<br/><br/>
 
-!(Pipline Architecture)[https://github.com/zaid638/HA-Data-Pipeline-Project-1/blob/main/datapipeline_architecture_2.drawio.png]<br/>
+![Pipline Architecture](https://github.com/zaid638/HA-Data-Pipeline-Project-1/blob/main/datapipeline_architecture_2.drawio.png)<br/><br/>
 
 The pipeline consists of the following major components:
 1. Azure – Source environment where SQL Server backup files originate.
@@ -19,7 +20,9 @@ The pipeline consists of the following major components:
 5. Logging System – Captures operational logs at multiple pipeline stages.
 6. Email Alerting – Notifies stakeholders in case of failures or critical events.<br/><br/>
 
-## 🔄 Data Flow<br/>
+---
+
+## 🔄 Data Flow<br/><br/>
 
 1. Backup files are transferred from Azure to GCP.
 2. GCP processes and stores the database restoration files.
@@ -31,7 +34,9 @@ The pipeline consists of the following major components:
 	- Pipeline failures
 	- Restoration errors<br/><br/>
 
-## ⚙️ Key Features<br/>
+---
+
+## ⚙️ Key Features<br/><br/>
 
 ✅ Cross-cloud data movement (Azure → GCP)
 ✅ Automated SQL Server database restoration
@@ -40,9 +45,12 @@ The pipeline consists of the following major components:
 ✅ Modular and scalable architecture
 ✅ Production-ready pipeline design<br/><br/>
 
-## 🚨 Error Handling & Monitoring<br/>
+---
+
+## 🚨 Error Handling & Monitoring<br/><br/>
 
 - All critical steps generate logs.
 - Failures trigger automated email alerts.
-- Logs can be used for root-cause analysis and auditing.<br/><br/>
+- Logs can be used for root-cause analysis and auditing.<br/>
 
+---
