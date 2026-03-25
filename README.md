@@ -10,11 +10,11 @@ The solution is designed with **fault tolerance**, **observability**, and **auto
 
 ## 🏗️ Architecture Overview<br/><br/>
 
-![Pipline Architecture](https://github.com/zaid638/HA-Data-Pipeline-Project-1/blob/main/datapipeline_architecture_2.drawio.png)<br/><br/>
+![Pipline Architecture](https://github.com/zaid638/HA-Data-Pipeline-Project-1/blob/main/datapipeline_architecture_3.drawio.png)<br/><br/>
 
 The pipeline consists of the following major components:
-1. Azure – Source environment where SQL Server backup files originate.
-2. Google Cloud Platform (GCP) – Intermediate cloud used for storage, orchestration, and processing.
+1. Azure (Blob Storage) – Source environment where SQL Server backup files originate.
+2. Google Cloud Platform (Cloud Storage, Bigquery) – Intermediate cloud used for storage and final reporting, orchestration, and processing.
 3. Database Restoration Files – Backup files staged for SQL Server restoration.
 4. SQL Server – Target database server where restoration is performed.
 5. Logging System – Captures operational logs at multiple pipeline stages.
@@ -24,13 +24,15 @@ The pipeline consists of the following major components:
 
 ## 🔄 Data Flow<br/><br/>
 
-1. Backup files are transferred from Azure to GCP.
+1. Backup files are transferred from Azure blob storage to GCP bucket.
 2. GCP processes and stores the database restoration files.
 3. Restoration files are used to restore the database on SQL Server.
-4. Log data is generated during:
+4. Relevant tables are updated in Bigquery.
+5. Log data is generated during:
 	- Cloud transfer and processing (GCP)
 	- Database restoration phase
-5. Email alerts are triggered for:
+ 	- Table update in Bigquery
+6. Email alerts are triggered for:
 	- Pipeline failures
 	- Restoration errors<br/><br/>
 
